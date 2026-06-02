@@ -15,19 +15,19 @@
       --muted: #7a7268;
       --rule: #d4cdc0;
     }
-
+ 
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
+ 
     html {
       font-size: 18px;
       background: var(--paper);
       color: var(--ink);
     }
-
+ 
     body {
       font-family: 'Libre Baskerville', Georgia, serif;
       min-height: 100vh;
@@ -36,31 +36,31 @@
       animation: fadein 1s ease forwards;
       animation-delay: 0.2s;
     }
-
+ 
     @keyframes fadein {
       to { opacity: 1; }
     }
-
+ 
     /* Top rule */
     .top-rule {
       height: 4px;
       background: var(--ink);
       width: 100%;
     }
-
+ 
     .accent-rule {
       height: 2px;
       background: var(--accent);
       width: 100%;
       margin-top: 3px;
     }
-
+ 
     header {
       max-width: 680px;
       margin: 0 auto;
       padding: 3.5rem 2rem 2rem;
     }
-
+ 
     .label {
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
@@ -70,7 +70,7 @@
       color: var(--accent);
       margin-bottom: 1.2rem;
     }
-
+ 
     h1 {
       font-family: 'Libre Baskerville', serif;
       font-size: clamp(1.9rem, 5vw, 2.8rem);
@@ -80,7 +80,7 @@
       color: var(--ink);
       margin-bottom: 1.4rem;
     }
-
+ 
     .byline {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.8rem;
@@ -90,24 +90,24 @@
       padding-bottom: 2rem;
       border-bottom: 1px solid var(--rule);
     }
-
+ 
     main {
       max-width: 680px;
       margin: 0 auto;
       padding: 2.5rem 2rem 6rem;
     }
-
+ 
     p {
       font-size: 1rem;
       line-height: 1.85;
       color: var(--ink);
       margin-bottom: 1.4rem;
     }
-
+ 
     p + p {
       text-indent: 1.5em;
     }
-
+ 
     /* Section headings */
     h2 {
       font-family: 'Libre Baskerville', serif;
@@ -119,23 +119,42 @@
       padding-top: 2rem;
       border-top: 1px solid var(--rule);
     }
-
+ 
     h2::before {
       content: "— ";
       color: var(--accent);
     }
-
+ 
     em {
       font-style: italic;
     }
-
+ 
+    .img-block {
+      margin: 2rem 0;
+    }
+ 
+    .img-block img {
+      width: 100%;
+      border-radius: 4px;
+      display: block;
+    }
+ 
+    .img-caption {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      letter-spacing: 0.03em;
+    }
+ 
     footer {
       max-width: 680px;
       margin: 0 auto;
       padding: 0 2rem 3rem;
       border-top: 1px solid var(--rule);
     }
-
+ 
     .footer-inner {
       padding-top: 1.5rem;
       font-family: 'DM Sans', sans-serif;
@@ -144,18 +163,18 @@
       color: var(--muted);
       letter-spacing: 0.04em;
     }
-
+ 
     .works-cited {
       max-width: 680px;
       margin: 0 auto;
       padding: 0 2rem 3rem;
     }
-
+ 
     .works-cited-inner {
       border-top: 1px solid var(--rule);
       padding-top: 2rem;
     }
-
+ 
     .works-cited h3 {
       font-family: 'DM Sans', sans-serif;
       font-size: 0.7rem;
@@ -165,7 +184,7 @@
       color: var(--accent);
       margin-bottom: 1.2rem;
     }
-
+ 
     .works-cited p {
       font-size: 0.85rem;
       line-height: 1.7;
@@ -174,11 +193,11 @@
       text-indent: -1.5em;
       padding-left: 1.5em;
     }
-
+ 
     .works-cited p + p {
       text-indent: -1.5em;
     }
-
+ 
     @media (max-width: 600px) {
       html { font-size: 16px; }
       header, main, footer, .works-cited { padding-left: 1.25rem; padding-right: 1.25rem; }
@@ -186,56 +205,73 @@
   </style>
 </head>
 <body>
-
+ 
   <div class="top-rule"></div>
   <div class="accent-rule"></div>
-
+ 
   <header>
     <div class="label">Essay &nbsp;·&nbsp; Climate &nbsp;·&nbsp; June 2026</div>
     <h1>Climate Change Is a Human Story</h1>
     <div class="byline">By Aayush Dave</div>
   </header>
-
+ 
   <main>
-
+ 
     <p>If you had asked me a year ago what I thought of climate change, I would have said something about rising temperatures, carbon emissions, and maybe even polar bears. Very standard answer, the type of surface-level thing you learn in middle school and never dive deeper into.</p>
-
+ 
     <p>Now, I don't think of it that way anymore. Here's what changed: climate change is not just an environmental problem. It is a human problem acting as a weather report, and the longer we keep talking about it as if it were just about the planet, the longer we get to avoid discussing the underlying causes of climate change.</p>
-
+ 
     <p>A hurricane does not hit everyone the same way. Neither does a heatwave, drought, wildfire, or a flood. The data has been clear for decades. Low-income communities are generally warmer because they have fewer trees and more pavement. Communities of color are more likely to live near highways, refineries, and industrial waste sites. When the storm comes, people with savings, insurance, working cars, and somewhere to go survive it differently from those without these resources.</p>
-
+ 
+    <div class="img-block">
+      <img src="https://www.bu.edu/sph/files/2021/09/flooding-1.jpeg" alt="Flooding in a low-income community" />
+    </div>
+ 
+ 
     <p>The activist Jacqui Patterson, who directed the NAACP's Environmental and Climate Justice Program for years, makes a critical point that struck me: the climate crisis is not experienced as a single thing; it is experienced as a result of whatever else is already happening to you. A heatwave would hit an African-American woman differently than it would hit me, not because the temperature is different, but because race, gender, income, healthcare access, and political power are all interconnected with each other before the heat even arrives. Patterson perceives this notion as intersectionality, and once you truly understand it, you cannot unsee it when looking at the data. Women of color in low-income communities absorb climate impacts in every aspect at once — reproductive health, housing, food access, and wages — while contributing the least to the emissions that cause them.</p>
-
+ 
+    <div class="img-block">
+      <img src="https://cdn.statcdn.com/Infographic/images/normal/34295.jpeg" alt="Climate change and social inequality infographic" />
+    </div>
+ 
     <p>Patterson goes one step further, which most people tend to skip. She names capitalism not as a slogan but as a specific diagnosis: an economic system built around amassing wealth for a small group of elites is incapable of valuing our planet or the people who live closest to its damage. The pollution, unequal recovery, and communities left waiting are not failures of the system. They are what the system produces when it runs normally.</p>
-
+ 
     <p>The writer Camille Dungy makes this point from a different angle. In her essay "Is All Writing Environmental Writing?" she argues that separating environmental writing from historical, political, or racial writing is itself a form of damage. She describes her experience editing <em>Black Nature</em>, an anthology focused on nature writing by African-American poets, and says that people were shocked to learn that Black writers can have a deep relationship with the natural world — revealing how distorted our categories of writing have become. Dungy also argues that the history of racism is inseparable from who gets to belong in nature and who gets treated as part of it in the worst sense. The moment you treat the environment as its own separate topic, you've already lost the thread. Patterson and Dungy both make the same argument from different perspectives. Stop pretending these are separate problems.</p>
-
+ 
     <h2>Technology is not our savior</h2>
-
+ 
     <p>The other story that we try to convince ourselves of is that smart people will invent us out of this crisis. AI will optimize better solutions. Carbon capture will scrub the atmosphere. Improved climate models will prepare us for what lies ahead.</p>
-
+ 
     <p>Some of that is real. Climate modeling has become very impressive. Machine learning is used to forecast extreme weather, monitor deforestation, and design more efficient materials. As an AI major at UC San Diego, I've seen how much energy goes into investing in these tools. There is a genuine belief that if we model the problem precisely and optimize the right variables, we can engineer our way out of it. I'm not dismissing that. But useful technology and sufficient technology are not the same thing.</p>
-
+ 
     <p>There is a specific kind of technology that keeps failing, and we should name it. It is the technology of control — tools built to manage nature from a distance, designed in a control room by people who do not live with the consequences.</p>
-
+ 
     <p><em>Snowpiercer</em> shows this on an extreme level. Humanity survives a climate catastrophe by retreating into an engineering marvel: a train that circles the frozen Earth forever. The engine works. The train works. But the people inside it are sorted by class, ground down by hierarchy, and treated as parts of a machine designed by someone else. The technology saved a species, but it did not save the people.</p>
-
+ 
+    <div class="img-block">
+      <img src="https://earth.org/wp-content/uploads/2023/09/flood-7411908_1280-1024x682.jpg" alt="Flood waters overwhelming a neighborhood" />
+    </div>
+ 
     <p>But not all technology fails this way. In Karen Engelsen's short story <em>La Sirène</em>, a cleanup mission uses drones, barges, and underwater robots to repair oil-polluted wetlands in Louisiana — and none of it works. What finally clears the debris is Lazare, a sixteen-year-old boy born with fused legs, who straps on a prosthetic tail and swims into the water himself. The drones were built to observe the problem from a distance. Lazare becomes part of it. That is the only difference, and it is everything. Technology designed away from the people and places it serves becomes a sophisticated way of looking away. Technology built with them — shaped around their bodies, their knowledge, their presence — becomes something else entirely.</p>
-
+ 
     <h2>What you should actually do</h2>
-
+ 
     <p>I am not going to tell you to recycle more. You already know this. The reason I wrote this is more useful.</p>
-
+ 
     <p>The next time you read a climate headline — an extreme weather event, a policy fight, a new AI tool for sustainability, or whatever it is — try asking these questions before anything else.</p>
-
+ 
     <p>Who is paying for this? Who is profiting? And who is being asked to wait?</p>
-
+ 
     <p>Just these three. They are Patterson's questions, even if she never phrased them exactly that way. They will not save the planet. But they will change what you see when you look at the news again.</p>
-
+ 
+    <div class="img-block">
+      <img src="https://thumbs.dreamstime.com/z/aftermath-storm-destruction-hope-devastating-powerful-houses-reduced-to-rubble-broken-beams-shattered-windows-litter-333764357.jpg" alt="Hurricane aftermath and destruction" />
+    </div>
+ 
     <p>Climate change is ultimately a human story. The sooner we talk about it that way, the sooner we focus on the parts that actually matter.</p>
-
+ 
   </main>
-
+ 
   <section class="works-cited">
     <div class="works-cited-inner">
       <h3>Works Cited</h3>
@@ -245,10 +281,10 @@
       <p><em>Snowpiercer</em>. Directed by Bong Joon-ho, CJ Entertainment, 2013.</p>
     </div>
   </section>
-
+ 
   <footer>
     <div class="footer-inner">Aayush Dave &nbsp;·&nbsp; SYN 1 &nbsp;·&nbsp; June 2026</div>
   </footer>
-
+ 
 </body>
 </html>
